@@ -1,6 +1,11 @@
 import java.lang.Exception;
 
 public class Main {
+    public static void main(String[] args) throws Exception {
+        Scanner scanner = new Scanner(System.in);
+        String expression = scanner.nextLine();
+        System.out.println(Main.calc(expression));
+    }
     public static String calc(String input) throws Exception {
         String[] unit = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
         String[] ten = {"X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC", "C"};
